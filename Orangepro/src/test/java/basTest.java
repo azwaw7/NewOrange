@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import browser.browser;
 import browser.Info;
 import pages.Login_page;
+import pages.PimPage;
 
 import java.time.Duration;
 
@@ -30,6 +31,10 @@ public class basTest {
 
     }
     public Login_page loginPage(){
-    return PageFactory.initElements(driver,Login_page.class);
+        return PageFactory.initElements(driver,Login_page.class);
     }
+    public PimPage navigateTorecu(){
+    return PageFactory.initElements(driver,PimPage.class);
+    }
+
 }
